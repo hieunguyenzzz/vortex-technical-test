@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vortex_Thequestion>
+            <active>true</active>
+            <codePool>local</codePool>
+                    </Vortex_Thequestion>
+    </modules>
+</config>

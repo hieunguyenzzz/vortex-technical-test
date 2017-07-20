@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <customer_account_create>
+        <reference name="form.additional.info">
+            <block type="core/template" name="where.did.you.hear.about.us" template="vortex/customer/wheredidyouhearaboutus.phtml" />
+        </reference>
+    </customer_account_create>
+
+    <checkout_onepage_index>
+        <reference name="checkout.onepage.billing">
+            <block type="core/text_list" name="form.additional.info">
+                <block type="captcha/captcha" name="captcha.guest.checkout">
+                    <reference name="head">
+                        <action method="addJs"><file>mage/captcha.js</file></action>
+                    </reference>
+                    <action method="setFormId"><formId>guest_checkout</formId></action>
+                    <action method="setImgWidth"><width>230</width></action>
+                    <action method="setImgHeight"><width>50</width></action>
+                </block>
+                <block type="captcha/captcha" name="captcha.register.during.checkout">
+                    <reference name="head">
+                        <action method="addJs"><file>mage/captcha.js</file></action>
+                    </reference>
+                    <action method="setFormId"><formId>register_during_checkout</formId></action>
+                    <action method="setImgWidth"><width>230</width></action>
+                    <action method="setImgHeight"><width>50</width></action>
+                </block>
+                <block type="core/template" name="where.did.you.hear.about.us" template="vortex/customer/wheredidyouhearaboutus.phtml" />
+            </block>
+        </reference>
+    </checkout_onepage_index>
+</layout>

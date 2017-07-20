@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author: Hieu Nguyen
+ */
+$sourceModel = Mage::getModel('vortex_thequestion/source_question');
+?>
+<li>
+    <div class="field">
+        <label for="where_did_you_hear_us"><?php echo $this->__('Where Did You Hear About Us') ?></label>
+        <div class="input-box">
+            <select name="where_did_you_hear_us" id="where_did_you_hear_us">
+                <?php foreach ($sourceModel->getAllOptions() as $option): ?>
+                    <option value="<?php echo $option['value'] ?>"><?php echo $option['label'] ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div>
+</li>
