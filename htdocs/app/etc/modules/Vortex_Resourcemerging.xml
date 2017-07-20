@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vortex_Resourcemerging>
+            <active>true</active>
+            <codePool>local</codePool>
+                    </Vortex_Resourcemerging>
+    </modules>
+</config>

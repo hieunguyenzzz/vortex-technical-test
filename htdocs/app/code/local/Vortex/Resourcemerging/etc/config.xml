@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vortex_Resourcemerging>
+            <version>0.1.0</version>
+        </Vortex_Resourcemerging>
+    </modules>
+    <global>
+        <models>
+            <vortex_resourcemerging>
+                <class>Vortex_Resourcemerging_Model</class>
+            </vortex_resourcemerging>
+            <core>
+                <rewrite>
+                    <design_package>Vortex_Resourcemerging_Model_Design_Package</design_package>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+</config>
